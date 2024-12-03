@@ -1,2 +1,7 @@
-#adrien04hz
+# adrien04hz.github.io
 
+PROYECTO PÁGINA WEB (EL AHORCADO)
+
+El presente proyecto es una recreación del juego del ahorcado, presenta la misma dinámica, solamente que visualmente es distinto, en este caso, de primer instancia, se encuentra la página de inicio, que por medio de variables de almacenamiento local, detecta si se encuentran partidas guardadas permitiendo continuar con el juego. Dentro del juego en sí es la misma dinámica del ahorcado, se presenta una pista de la palabra misteriosa y se gana teniendo diez puntos acumulados, por cada error el personaje fantasma pierde diez puntos de salud y una vez teniendo cero puntos de vida, el puntaje se reinicia, dando paso a volver a acumular diez aciertos, es decir, se reincia todo.
+
+Para poder tener buen funcionamiento dentro del juego, se utilizó variables de almacenamiento local, donde se tienen los datos suficientes para poder reanudar juegos, estos datos almacenados son la vida, aciertos, si hay partida guardada y los errores, con el objetivo de que al momento de que se reanude algún juego, se obtengan los errores, aciertos, barra de la vida mostrada correctamente. Por otro lado se hizo uso de animaciones por medio de canvas para tener tres animaciones, la normal, la de recibir daño y la de la desaparición del fantasma. Además, se ocupó bootstrap para la parte estética, en algunas cosas.
