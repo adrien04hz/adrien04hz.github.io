@@ -1,5 +1,9 @@
 # Comandos de git
 
+## Contenido
+
+* ![Creacion de un repositorio](https://github.com/adrien04hz/adrien04hz.github.io/blob/main/tmp/comandos.md#comandos-de-git)
+
 ## Cración de un repositorio
 
 Para crear un repositorio usar el comando `git init`, enseguida un ejemplo:
