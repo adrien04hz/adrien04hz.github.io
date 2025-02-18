@@ -5,5 +5,5 @@
     De manera general, el proyecto fue realizado por medio de PHP, JS, CSS, HTML y la base de datos MYSQL.<br><br>
     Cada carpeta es parte fundamental para la funcionalidad de la página.<br><br>
     Proyecto elaborado en colaboración con: https://github.com/Valm04<br><br>
-    PD: Se encuentra en desarrollo.
+    PD: Actualmente se encuentra en desarrollo.
 </p>
