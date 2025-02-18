@@ -1,0 +1,38 @@
+services:
+  mysql:
+    image: mysql:9.1.0
+    container_name: mysql_container2
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: my_database
+      MYSQL_USER: mysql_user
+      MYSQL_PASSWORD: mysql_password
+    ports:
+      - "3320:3306"
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+      - ./data:/data
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin_container2
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: mysql_user
+      PMA_PASSWORD: mysql_password
+    ports:
+      - "8087:80"
+    depends_on: 
+      - mysql
+    volumes:
+      - ./log:/var/www/html/log
+
+  apache:
+    image: php:8.2-apache
+    container_name: apache_container2
+    volumes:
+      - ./www:/var/www/html
+    ports:
+      - "8089:80"
+    depends_on:
+      - mysql
